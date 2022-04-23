@@ -1,0 +1,16 @@
+<div class="row">
+
+    <% @cats.each do|cat| %>
+    <div class="col-12">
+        <h1 style="text-align:center;"> <%= cat.heading%> </h1>
+    </div>
+    <% @products.each do |product|%>
+
+    <div class="col-4">
+        <h5> <%= product.name %> </h5>
+        <p> <%= product.description %> </p>
+    </div>
+
+    <% end %>
+    <% end %>
+</div>

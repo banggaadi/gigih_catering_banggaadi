@@ -5,3 +5,18 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+
+Category.create!(heading: 'Main dish', body:'food', display:true)
+Category.create!(heading: 'Beverages', body:'drink', display:true)
+Category.create!(heading: 'Dessert', body:'refreshing', display:true)
+
+makanan1 = Product.create!(
+    name:"nasi uduk",
+    description:"nasi enak",
+    price:10000,
+    category: Category.find(1)
+
+)
+
+makanan1.save
